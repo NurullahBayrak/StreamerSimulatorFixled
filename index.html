@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streamer Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎥 Streamer Simulator</h1>
+
+<div class="topbar">
+  <span>📅 Gün: <span id="day"></span></span>
+  <span>👁️ İzleyici: <span id="viewers"></span></span>
+  <span>🎥 Kalite: <span id="quality"></span></span>
+</div>
+
+<div class="main">
+
+<div class="left">
+
+<div class="card">
+  <button id="streamBtn">📡 Yayın Aç</button>
+  <button id="miniGameBtn">🎮 Mini Oyun</button>
+  <div class="progress"><div id="bar"></div></div>
+</div>
+
+<div class="card">
+  <p>👤 Takipçi: <span id="followers"></span></p>
+  <p>💰 Para: <span id="money"></span>₺</p>
+  <p>💎 Bağış: <span id="donation"></span>₺</p>
+  <p>🔥 Level: <span id="level"></span></p>
+</div>
+
+<div class="card">
+  <h3>🎬 Sahne</h3>
+  <button data-scene="Gameplay">Gameplay</button>
+  <button data-scene="Chatting">Chatting</button>
+  <p>Aktif: <span id="scene"></span></p>
+</div>
+
+<div class="card">
+  <h3>🛒 Ekipman</h3>
+  <button onclick="buyEquipment('mic')">🎤 Mikrofon (100₺)</button>
+  <button onclick="buyEquipment('pc')">💻 PC (200₺)</button>
+  <button onclick="buyEquipment('cam')">📷 Kamera (300₺)</button>
+</div>
+
+</div>
+
+<div class="right">
+<div class="card">
+  <h3>💬 Chat</h3>
+  <div id="chat"></div>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
